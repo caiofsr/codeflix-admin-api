@@ -56,7 +56,9 @@
 				"esbenp.prettier-vscode",
 				"prisma.prisma",
 				"gruntfuggly.todo-tree",
-				"humao.rest-client"
+				"humao.rest-client",
+				"orta.vscode-jest",
+				"firsttris.vscode-jest-runner"
 			]
 		}
 	}
