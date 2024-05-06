@@ -31,7 +31,11 @@ export class Category {
   }
 
   static create(props: CategoryCreateCommand) {
-    return new Category(props)
+    const category = new Category(props)
+
+    Category.validate(category)
+
+    return category
   }
 
   static validate(entity: Category) {
@@ -41,10 +45,14 @@ export class Category {
 
   changeName(name: string): void {
     this.name = name
+
+    Category.validate(this)
   }
 
   changeDescription(description: string) {
     this.description = description
+
+    Category.validate(this)
   }
 
   activate() {
