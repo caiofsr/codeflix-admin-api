@@ -1,5 +1,5 @@
-import { EntityValidationError } from '../shared/domain/validators/validation.error'
-import { Uuid } from '../shared/value-objects/uuid.vo'
+import { EntityValidationError } from '../../shared/domain/validators/validation.error'
+import { Uuid } from '../../shared/value-objects/uuid.vo'
 import { Category } from './category.entity'
 
 describe('Category Unit Tests', () => {
